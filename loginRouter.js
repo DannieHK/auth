@@ -58,10 +58,4 @@ router.post('/', async (req, res) => {
   }
 });
 
-// Logout route
-router.get('/logout', (req, res) => {
-  res.clearCookie('token');
-  res.redirect('/');
-});
-
 export default router;
