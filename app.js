@@ -13,10 +13,12 @@ app.use(express.json())
 //                          ROUTERS...
 import checkAuth from './middleware/checkAuth.js';
 import login from './Routers/loginRouter.js';
+import logout from './Routers/logoutRouter.js';
 import company from './Routers/companyRouter.js';
 import client from './Routers/clientRouter.js';
 app
     .use('/login', login)
+    .use('/logout', checkAuth, logout)
     .use('/clients', checkAuth, client)
     .use('/companies', checkAuth, company)
     .get('/', (req, res) => {
