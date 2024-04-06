@@ -4,7 +4,7 @@ import jwt from 'jsonwebtoken';
 const checkAuth = (req, res, next) => {
   const token = req.cookies.token; // Extract token from cookies
   if (!token) {
-    return res.redirect('/login'); // Always redirect to /login if no token found
+    return res.redirect('/login');
   };
 
   try {
