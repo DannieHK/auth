@@ -1,1 +1,2 @@
-Node.js login system using JWT
+Node.js login system using JWT.
+JavaScript, HTML, CSS.
