@@ -1,0 +1,58 @@
+h2 {
+    text-align: center;
+}
+
+#register-form {
+    position: relative;
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#register-form label {
+    display: block;
+    text-align: left;
+    margin-bottom: 8px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+#register-form input[type="text"],
+#register-form input[type="password"] {
+    font-size: 14px;
+    font-weight: 400;
+    outline: none;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    padding: 0 15px;
+    height: 30px;
+    margin: 8px 0;
+    width: 200px;
+}
+
+#register-form input[type="text"]:is(:focus, :valid),
+#register-form input[type="password"]:is(:focus, :valid) {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.21);
+}
+
+#register-form input[type="submit"] {
+    font-size: 16px;
+    font-weight: 400;
+    display: block;
+    height: 33px;
+    max-width: 150px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border-color: #aaa;
+    margin: 25px auto;
+    transition: all 0.3s linear;
+    cursor: pointer;
+    color: black;;
+}
+
+#register-form input[type="submit"]:hover {
+    background-color: lightskyblue;
+    color: black;
+}
